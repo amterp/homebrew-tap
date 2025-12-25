@@ -1,6 +1,6 @@
 cask "keytee" do
-  version "0.1.0"
-  sha256 "PLACEHOLDER_UNTIL_FIRST_RELEASE"
+  version "0.1.2"
+  sha256 "36a83f543f413fd99b1b1468ed02e6455fff85d0bf57719ded66ed10bf103319"
 
   url "https://github.com/amterp/keytee/releases/download/v#{version}/KeyTee-#{version}.zip"
   name "KeyTee"
