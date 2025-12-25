@@ -1,11 +1,11 @@
 cask "bep" do
-  version "1.0.0"
-  sha256 "PLACEHOLDER"
+  version "0.1.3"
+  sha256 "ffd3137e66ef600b177434c4887c2d4ae86d82f73c98e7e16742e58dcf4e67f5"
 
-  url "https://github.com/amterp/BetterEmojiPicker/releases/download/v#{version}/BetterEmojiPicker-#{version}.zip"
+  url "https://github.com/amterp/better-emoji-picker/releases/download/v#{version}/BetterEmojiPicker-#{version}.zip"
   name "Better Emoji Picker"
   desc "A fast, keyboard-driven emoji picker for macOS"
-  homepage "https://github.com/amterp/BetterEmojiPicker"
+  homepage "https://github.com/amterp/better-emoji-picker"
 
   depends_on macos: ">= :sonoma"
 
