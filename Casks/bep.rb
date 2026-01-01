@@ -1,6 +1,6 @@
 cask "bep" do
-  version "0.1.4"
-  sha256 "e51738afccca415bea5e83045864e400285995fd921417e3abd54912113b8cf3"
+  version "0.1.5"
+  sha256 "aef9a0fb9c9a3880c41ac5b81555448462f71404fbbcf4a5da71f34482575eae"
 
   url "https://github.com/amterp/better-emoji-picker/releases/download/v#{version}/BetterEmojiPicker-#{version}.zip"
   name "Better Emoji Picker"
