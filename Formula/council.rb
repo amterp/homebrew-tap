@@ -1,16 +1,16 @@
 class Council < Formula
   desc "CLI tool for collaborative multi-agent sessions"
   homepage "https://github.com/amterp/council"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/amterp/council/releases/download/v#{version}/council-#{version}-darwin-arm64.tar.gz"
-      sha256 "facc03f0d830c0d3030fda8a908b8469763c63c6cba810f691ba969bd14b0940"
+      sha256 "6e696d4631a790e41e923f312041daf9c5a145c9539c8883fcd26e9b0fc67f1e"
     else
       url "https://github.com/amterp/council/releases/download/v#{version}/council-#{version}-darwin-amd64.tar.gz"
-      sha256 "e3daea9efbed0294319a1a04d02949097eceea85dc04197ddf5f8934cc6a4128"
+      sha256 "47aa1b089bdcf310f4db3775cdc9537170b30400925a5d9aa9ca127ba5654b69"
     end
   end
 
