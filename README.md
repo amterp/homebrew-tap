@@ -12,11 +12,11 @@ brew tap amterp/tap
 
 Command-line tools.
 
-| Name                                         | Description                                                    | Install                           |
-| -------------------------------------------- | -------------------------------------------------------------- | --------------------------------- |
-| [beagle](https://github.com/amterp/beagle)   | macOS job scheduler with profile-based multi-repo workflows    | `brew install amterp/tap/beagle`  |
-| [council](https://github.com/amterp/council) | CLI tool for collaborative multi-agent sessions                | `brew install amterp/tap/council` |
-| [kan](https://github.com/amterp/kan)         | A kanban board that lives in your repository                   | `brew install amterp/tap/kan`     |
+| Name                                         | Description                                     | Install                           |
+| -------------------------------------------- | ----------------------------------------------- | --------------------------------- |
+| [beagle](https://github.com/amterp/beagle)   | macOS job scheduler for multi-repo workflows    | `brew install amterp/tap/beagle`  |
+| [council](https://github.com/amterp/council) | CLI tool for collaborative multi-agent sessions | `brew install amterp/tap/council` |
+| [kan](https://github.com/amterp/kan)         | A kanban board that lives in your repository    | `brew install amterp/tap/kan`     |
 
 ## Casks
 
