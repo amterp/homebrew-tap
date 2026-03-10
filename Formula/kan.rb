@@ -1,16 +1,16 @@
 class Kan < Formula
   desc "A kanban board that lives in your repository"
   homepage "https://github.com/amterp/kan"
-  version "0.16.1"
+  version "0.17.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/amterp/kan/releases/download/v#{version}/kan-#{version}-darwin-arm64.tar.gz"
-      sha256 "fcd55fe265ba5d87c3c2be57bd68aa6b1f5ac0fb9097f4f0efc6b052642e4092"
+      sha256 "eb541e06296ea410332663bbe3cc03fbfc9f7d8afe3edda42a8ec3b05156f7d9"
     else
       url "https://github.com/amterp/kan/releases/download/v#{version}/kan-#{version}-darwin-amd64.tar.gz"
-      sha256 "5d7b756eec846fd4d5e0565d6d466a5ddada7d2e86ecc443a6125cc059f96842"
+      sha256 "e2e538e6e18cd51243c392bad5f1e5d90007f2ec76b230b14d09713b68b76d1e"
     end
   end
 
