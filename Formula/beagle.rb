@@ -1,16 +1,16 @@
 class Beagle < Formula
   desc "macOS job scheduler with profile-based multi-repo workflows"
   homepage "https://github.com/amterp/beagle"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/amterp/beagle/releases/download/v#{version}/beagle-#{version}-darwin-arm64.tar.gz"
-      sha256 "85d3a5cd766ae7442c69c9292619b1419a433bb2a1186158733a56f5d9788d5e"
+      sha256 "b51589a204fc9df12dd9fb6409f530502e0a18b7a778457c0b7ddf963ef37238"
     else
       url "https://github.com/amterp/beagle/releases/download/v#{version}/beagle-#{version}-darwin-amd64.tar.gz"
-      sha256 "e0cf63dba23fff52dd536284fd9ec9d59d896c9844c39223d77d227f44137d7a"
+      sha256 "00ee7b2f42ad0156faed9c906838549e6c108829d1dacc97090933d36df10607"
     end
   end
 
