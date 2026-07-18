@@ -7,11 +7,21 @@ cask "bep" do
   desc "A fast, keyboard-driven emoji picker for macOS"
   homepage "https://github.com/amterp/better-emoji-picker"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on macos: ">= :sonoma"
 
   app "BetterEmojiPicker.app"
 
+  # BEP is a menu bar agent holding a global hotkey; without this an upgrade or
+  # uninstall leaves the old process running and still owning Ctrl+Cmd+Space.
+  uninstall quit: "dev.amterp.BetterEmojiPicker"
+
   zap trash: [
+    "~/.config/bep/settings.toml",
     "~/Library/Preferences/dev.amterp.BetterEmojiPicker.plist",
   ]
 
@@ -22,8 +32,5 @@ cask "bep" do
       1. Open BEP from Applications (or it will auto-start)
       2. Click "Open System Settings" when prompted
       3. Enable BEP in Privacy & Security → Accessibility
-
-    If you see "app is damaged" error (unsigned app):
-      xattr -cr /Applications/BetterEmojiPicker.app
   EOS
 end
