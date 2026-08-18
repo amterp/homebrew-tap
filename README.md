@@ -26,3 +26,4 @@ macOS applications.
 | ---------------------------------------------------- | ---------------------------------------------- | --------------------------------------- |
 | [bep](https://github.com/amterp/better-emoji-picker) | A fast, keyboard-driven emoji picker for macOS | `brew install --cask amterp/tap/bep`    |
 | [keytee](https://github.com/amterp/keytee)           | A safety net for your keystrokes               | `brew install --cask amterp/tap/keytee` |
+| [muster](https://github.com/amterp/muster)           | Native workspace for AI coding agents          | `brew install --cask amterp/tap/muster` |
