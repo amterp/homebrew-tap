@@ -1,6 +1,6 @@
 # amterp Homebrew Tap
 
-A Homebrew tap containing my personal projects.
+A Homebrew tap containing some of my personal projects.
 
 ## Setup
 
