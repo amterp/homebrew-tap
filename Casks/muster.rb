@@ -16,8 +16,8 @@
 # app a second time to get at it.
 
 cask "muster" do
-  version "0.14.0"
-  sha256 "f024502cc099bbbb74965138c2dd20f7fd664bc86560698b5ff0901aa7339b5d"
+  version "0.16.0"
+  sha256 "59413bf878e6e313e25428bbda8fa620dd0a961c13b444ca81fe0f44902aedcc"
 
   url "https://github.com/amterp/muster/releases/download/v#{version}/Muster-#{version}-arm64.zip"
   name "Muster"
@@ -49,7 +49,9 @@ cask "muster" do
   # Quit first, because Muster owns a bridge process per pane and a copy of the
   # app deleted out from under a running one leaves those to be reaped. The
   # session daemon is meant to outlive the app and does: agents keep working,
-  # and `zap` is what takes them down with everything else.
+  # and `zap` is what takes them down with everything else. It is also what lets
+  # Muster upgrade itself: Upgrade muster runs `brew upgrade` in a pane, which
+  # the daemon keeps running while this quits the app.
   #
   # `quit:` names a bundle id, so it closes any Muster carrying it - a build run
   # from a checkout included, not only the one brew installed. That is the right
